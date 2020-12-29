@@ -1,0 +1,384 @@
+
+/* Class = "UILabel"; text = "email"; ObjectID = "0fi-ZN-TTW"; */
+"0fi-ZN-TTW.text" = "email";
+
+/* Class = "UILabel"; text = "0:2:8"; ObjectID = "11x-Ss-bUQ"; */
+"11x-Ss-bUQ.text" = "0:2:8";
+
+/* Class = "UILabel"; text = "IT Automation"; ObjectID = "2S4-oK-5OT"; */
+"2S4-oK-5OT.text" = "IT Automation";
+
+/* Class = "UILabel"; text = "Sign Up"; ObjectID = "2e1-rf-GZN"; */
+"2e1-rf-GZN.text" = "Sign Up";
+
+/* Class = "UILabel"; text = "CNN"; ObjectID = "35m-5N-LrX"; */
+"35m-5N-LrX.text" = "CNN";
+
+/* Class = "UILabel"; text = "Comedy"; ObjectID = "3Ai-OV-LAs"; */
+"3Ai-OV-LAs.text" = "Comedy";
+
+/* Class = "UILabel"; text = "Password Recovery"; ObjectID = "3NY-nF-dU5"; */
+"3NY-nF-dU5.text" = "Password Recovery";
+
+/* Class = "UILabel"; text = "Please enter your email address and we'll send you an email to reset your password"; ObjectID = "4o4-wI-9xn"; */
+"4o4-wI-9xn.text" = "Please enter your email address and we'll send you an email to reset your password";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "4xa-6r-HOr"; */
+"4xa-6r-HOr.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "00:00:00"; ObjectID = "5kv-94-WEA"; */
+"5kv-94-WEA.text" = "00:00:00";
+
+/* Class = "UILabel"; text = "No Internet Connection!"; ObjectID = "6Ab-Fo-1WK"; */
+"6Ab-Fo-1WK.text" = "No Internet Connection!";
+
+/* Class = "UILabel"; text = "CNN"; ObjectID = "6Uv-Cu-NFC"; */
+"6Uv-Cu-NFC.text" = "CNN";
+
+/* Class = "UILabel"; text = "LifeStyle"; ObjectID = "6bS-yh-gxg"; */
+"6bS-yh-gxg.text" = "LifeStyle";
+
+/* Class = "UILabel"; text = "Email Address"; ObjectID = "6wZ-fs-64Z"; */
+"6wZ-fs-64Z.text" = "Email Address";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "6y7-GL-atg"; */
+"6y7-GL-atg.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "180"; ObjectID = "7H2-tH-XNc"; */
+"7H2-tH-XNc.text" = "180";
+
+/* Class = "UILabel"; text = "confirm password"; ObjectID = "7NH-0P-1RL"; */
+"7NH-0P-1RL.text" = "confirm password";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "7r8-ED-kGA"; */
+"7r8-ED-kGA.text" = "Title";
+
+/* Class = "UILabel"; text = "Mamunur Rahaman Hera"; ObjectID = "8GH-91-XWI"; */
+"8GH-91-XWI.text" = "Mamunur Rahaman Hera";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "8c3-u3-cMX"; */
+"8c3-u3-cMX.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "8fR-he-AgL"; */
+"8fR-he-AgL.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "LifeStyle"; ObjectID = "8ff-ON-s5Y"; */
+"8ff-ON-s5Y.text" = "LifeStyle";
+
+/* Class = "UILabel"; text = "Please check your internet connection and try again."; ObjectID = "BtK-MI-eQQ"; */
+"BtK-MI-eQQ.text" = "Please check your internet connection and try again.";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Buq-ca-8XT"; */
+"Buq-ca-8XT.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "username"; ObjectID = "C33-ww-nhM"; */
+"C33-ww-nhM.text" = "username";
+
+/* Class = "UILabel"; text = "Drama"; ObjectID = "EQF-vk-hfm"; */
+"EQF-vk-hfm.text" = "Drama";
+
+/* Class = "UILabel"; text = "Suggested Videos"; ObjectID = "FKa-gm-5s9"; */
+"FKa-gm-5s9.text" = "Suggested Videos";
+
+/* Class = "UILabel"; text = "Videon"; ObjectID = "FZf-gY-9i2"; */
+"FZf-gY-9i2.text" = "Videon";
+
+/* Class = "UITextField"; placeholder = "Search"; ObjectID = "G0x-bt-BnN"; */
+"G0x-bt-BnN.placeholder" = "Search";
+
+/* Class = "UILabel"; text = "188"; ObjectID = "HeY-Vr-Wnh"; */
+"HeY-Vr-Wnh.text" = "188";
+
+/* Class = "UILabel"; text = "Mamunur Rahaman Hera"; ObjectID = "HqH-zy-6oK"; */
+"HqH-zy-6oK.text" = "Mamunur Rahaman Hera";
+
+/* Class = "UILabel"; text = "0:2:8"; ObjectID = "J2J-Pc-h4l"; */
+"J2J-Pc-h4l.text" = "0:2:8";
+
+/* Class = "UIButton"; normalTitle = "English"; ObjectID = "Jea-Be-JNf"; */
+"Jea-Be-JNf.normalTitle" = "English";
+
+/* Class = "UILabel"; text = "IT Automation"; ObjectID = "KS6-BS-Gb0"; */
+"KS6-BS-Gb0.text" = "IT Automation";
+
+/* Class = "UILabel"; text = "Comedy"; ObjectID = "KqX-24-CWp"; */
+"KqX-24-CWp.text" = "Comedy";
+
+/* Class = "UILabel"; text = "Videon"; ObjectID = "L7b-jD-hpC"; */
+"L7b-jD-hpC.text" = "Videon";
+
+/* Class = "UILabel"; text = "We send a 4 digit code to your email"; ObjectID = "LoT-sT-rir"; */
+"LoT-sT-rir.text" = "We send a 4 digit code to your email";
+
+/* Class = "UILabel"; text = "You agree to Videon's"; ObjectID = "NwO-ly-n8p"; */
+"NwO-ly-n8p.text" = "You agree to Videon's";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "OER-TT-sJY"; */
+"OER-TT-sJY.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "LifeStyle"; ObjectID = "OVG-Qs-vc1"; */
+"OVG-Qs-vc1.text" = "LifeStyle";
+
+/* Class = "UILabel"; text = "Settings"; ObjectID = "Or0-Ai-pZA"; */
+"Or0-Ai-pZA.text" = "Settings";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "PoX-tB-7wV"; */
+"PoX-tB-7wV.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Qx4-f7-gAH"; */
+"Qx4-f7-gAH.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "188"; ObjectID = "Qyl-Cn-bzs"; */
+"Qyl-Cn-bzs.text" = "188";
+
+/* Class = "UIButton"; normalTitle = "See All"; ObjectID = "RPN-e0-6tK"; */
+"RPN-e0-6tK.normalTitle" = "See All";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "RZ9-3R-c1B"; */
+"RZ9-3R-c1B.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Most Popular"; ObjectID = "S2m-Vk-DWo"; */
+"S2m-Vk-DWo.text" = "Most Popular";
+
+/* Class = "UILabel"; text = "Please Login to get access your profile"; ObjectID = "SZj-hg-vLm"; */
+"SZj-hg-vLm.text" = "Please Login to get access your profile";
+
+/* Class = "UILabel"; text = "Create Password"; ObjectID = "U7U-2l-qqp"; */
+"U7U-2l-qqp.text" = "Create Password";
+
+/* Class = "UILabel"; text = "Email Verification"; ObjectID = "UCf-Ut-te9"; */
+"UCf-Ut-te9.text" = "Email Verification";
+
+/* Class = "UILabel"; text = "Comedy"; ObjectID = "VDQ-4J-eDM"; */
+"VDQ-4J-eDM.text" = "Comedy";
+
+/* Class = "UILabel"; text = "Comedy"; ObjectID = "VJV-0x-Fsm"; */
+"VJV-0x-Fsm.text" = "Comedy";
+
+/* Class = "UILabel"; text = "22 hour"; ObjectID = "VrG-12-NxN"; */
+"VrG-12-NxN.text" = "22 hour";
+
+/* Class = "UIButton"; normalTitle = "Sign Up"; ObjectID = "WBF-eH-gAN"; */
+"WBF-eH-gAN.normalTitle" = "Sign Up";
+
+/* Class = "UILabel"; text = "Sign In"; ObjectID = "XQU-wd-RZC"; */
+"XQU-wd-RZC.text" = "Sign In";
+
+/* Class = "UILabel"; text = "0:2:8"; ObjectID = "XU1-2J-Om4"; */
+"XU1-2J-Om4.text" = "0:2:8";
+
+/* Class = "UILabel"; text = "confirm password"; ObjectID = "XVY-PY-7to"; */
+"XVY-PY-7to.text" = "confirm password";
+
+/* Class = "UILabel"; text = "22 hour"; ObjectID = "Xzx-h7-0pD"; */
+"Xzx-h7-0pD.text" = "22 hour";
+
+/* Class = "UIButton"; normalTitle = "Privacy & policy"; ObjectID = "Y5h-zd-Txa"; */
+"Y5h-zd-Txa.normalTitle" = "Privacy & policy";
+
+/* Class = "UILabel"; text = "Most Popular Videos"; ObjectID = "Y8f-ht-5yw"; */
+"Y8f-ht-5yw.text" = "Most Popular Videos";
+
+/* Class = "UILabel"; text = "IT Automation"; ObjectID = "ZGd-fS-0TF"; */
+"ZGd-fS-0TF.text" = "IT Automation";
+
+/* Class = "UILabel"; text = "188"; ObjectID = "ZsA-4k-W4i"; */
+"ZsA-4k-W4i.text" = "188";
+
+/* Class = "UILabel"; text = "OR"; ObjectID = "a6q-DT-K3b"; */
+"a6q-DT-K3b.text" = "OR";
+
+/* Class = "UILabel"; text = "hera.pstu.cse@gmail.com"; ObjectID = "aZh-qH-ZnK"; */
+"aZh-qH-ZnK.text" = "hera.pstu.cse@gmail.com";
+
+/* Class = "UILabel"; text = "Already have an account?"; ObjectID = "aco-EQ-Wbr"; */
+"aco-EQ-Wbr.text" = "Already have an account?";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "bca-P0-8uG"; */
+"bca-P0-8uG.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Search"; ObjectID = "cWv-Hn-YSe"; */
+"cWv-Hn-YSe.placeholder" = "Search";
+
+/* Class = "UILabel"; text = "Forgot Password"; ObjectID = "ckr-wK-YM9"; */
+"ckr-wK-YM9.text" = "Forgot Password";
+
+/* Class = "UILabel"; text = "60"; ObjectID = "d1z-7S-awy"; */
+"d1z-7S-awy.text" = "60";
+
+/* Class = "UILabel"; text = "password"; ObjectID = "dAI-tV-OQe"; */
+"dAI-tV-OQe.text" = "password";
+
+/* Class = "UILabel"; text = "7347:30:00"; ObjectID = "dQm-66-QiE"; */
+"dQm-66-QiE.text" = "7347:30:00";
+
+/* Class = "UILabel"; text = "Live TV"; ObjectID = "dU7-wS-PAv"; */
+"dU7-wS-PAv.text" = "Live TV";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "dUv-sV-P40"; */
+"dUv-sV-P40.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "22 hour"; ObjectID = "dyO-5f-Bea"; */
+"dyO-5f-Bea.text" = "22 hour";
+
+/* Class = "UILabel"; text = "IT Automation Full Crash Cource for System Administration By Google "; ObjectID = "e39-48-0tc"; */
+"e39-48-0tc.text" = "IT Automation Full Crash Cource for System Administration By Google ";
+
+/* Class = "UIButton"; normalTitle = "See All"; ObjectID = "e88-FC-hgx"; */
+"e88-FC-hgx.normalTitle" = "See All";
+
+/* Class = "UITextField"; placeholder = "Search"; ObjectID = "eaB-pY-ccn"; */
+"eaB-pY-ccn.placeholder" = "Search";
+
+/* Class = "UILabel"; text = "Suggested Tv"; ObjectID = "ezD-ZI-rbC"; */
+"ezD-ZI-rbC.text" = "Suggested Tv";
+
+/* Class = "UILabel"; text = "Label default label color. i agreee to default label color. my name is videon"; ObjectID = "f5b-Dh-i8a"; */
+"f5b-Dh-i8a.text" = "Label default label color. i agreee to default label color. my name is videon";
+
+/* Class = "UILabel"; text = "00:00:00"; ObjectID = "fv4-EL-lWr"; */
+"fv4-EL-lWr.text" = "00:00:00";
+
+/* Class = "UILabel"; text = "Label default label color. i agreee to default label color. my name is videon"; ObjectID = "fvY-bA-7qC"; */
+"fvY-bA-7qC.text" = "Label default label color. i agreee to default label color. my name is videon";
+
+/* Class = "UILabel"; text = "LifeStyle"; ObjectID = "fyG-US-WeY"; */
+"fyG-US-WeY.text" = "LifeStyle";
+
+/* Class = "UILabel"; text = "Comedy"; ObjectID = "goe-ZE-r7e"; */
+"goe-ZE-r7e.text" = "Comedy";
+
+/* Class = "UILabel"; text = "Congratulations!"; ObjectID = "hBe-jx-NzB"; */
+"hBe-jx-NzB.text" = "Congratulations!";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "hkb-i3-Pk9"; */
+"hkb-i3-Pk9.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Your account has been reset"; ObjectID = "huC-Ia-mSm"; */
+"huC-Ia-mSm.text" = "Your account has been reset";
+
+/* Class = "UILabel"; text = "Enter Code"; ObjectID = "kJv-b0-aT4"; */
+"kJv-b0-aT4.text" = "Enter Code";
+
+/* Class = "UIButton"; normalTitle = "Sign In"; ObjectID = "kQ9-AO-lP5"; */
+"kQ9-AO-lP5.normalTitle" = "Sign In";
+
+/* Class = "UILabel"; text = "IT Automation Full Crash Cource for System Administration By Google "; ObjectID = "kbN-zQ-wBJ"; */
+"kbN-zQ-wBJ.text" = "IT Automation Full Crash Cource for System Administration By Google ";
+
+/* Class = "UILabel"; text = "Enter Code"; ObjectID = "l1x-mB-wKm"; */
+"l1x-mB-wKm.text" = "Enter Code";
+
+/* Class = "UIButton"; normalTitle = "Rate Us"; ObjectID = "l4h-eF-Osf"; */
+"l4h-eF-Osf.normalTitle" = "Rate Us";
+
+/* Class = "UILabel"; text = "Videon"; ObjectID = "l63-iK-jfc"; */
+"l63-iK-jfc.text" = "Videon";
+
+/* Class = "UILabel"; text = "password"; ObjectID = "lEF-6S-W78"; */
+"lEF-6S-W78.text" = "password";
+
+/* Class = "UILabel"; text = "Featured"; ObjectID = "lme-7c-TbW"; */
+"lme-7c-TbW.text" = "Featured";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "m7g-kA-s1T"; */
+"m7g-kA-s1T.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "2 Hour"; ObjectID = "m9l-np-bem"; */
+"m9l-np-bem.text" = "2 Hour";
+
+/* Class = "UILabel"; text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."; ObjectID = "mGf-lJ-1ha"; */
+"mGf-lJ-1ha.text" = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+
+/* Class = "UILabel"; text = "address"; ObjectID = "mX1-Ny-G5i"; */
+"mX1-Ny-G5i.text" = "address";
+
+/* Class = "UILabel"; text = "4.5(4)"; ObjectID = "meY-0T-85S"; */
+"meY-0T-85S.text" = "4.5(4)";
+
+/* Class = "UILabel"; text = "Most Recent"; ObjectID = "ms7-Eh-4YA"; */
+"ms7-Eh-4YA.text" = "Most Recent";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "n8e-cB-0Xs"; */
+"n8e-cB-0Xs.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Videon"; ObjectID = "nCM-xe-fjH"; */
+"nCM-xe-fjH.text" = "Videon";
+
+/* Class = "UILabel"; text = "We send a 4 digit code to your email"; ObjectID = "ob7-yX-LY8"; */
+"ob7-yX-LY8.text" = "We send a 4 digit code to your email";
+
+/* Class = "UIButton"; normalTitle = "About Us"; ObjectID = "plQ-Iq-auB"; */
+"plQ-Iq-auB.normalTitle" = "About Us";
+
+/* Class = "UILabel"; text = "22 hour"; ObjectID = "rPx-Tk-LHa"; */
+"rPx-Tk-LHa.text" = "22 hour";
+
+/* Class = "UITextField"; text = "i7+G9z2QVM4tVdiRzEXjoFO"; ObjectID = "rRz-2P-i7h"; */
+"rRz-2P-i7h.text" = "i7+G9z2QVM4tVdiRzEXjoFO";
+
+/* Class = "UIButton"; normalTitle = "Resend Code"; ObjectID = "rro-rD-LRY"; */
+"rro-rD-LRY.normalTitle" = "Resend Code";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "sJM-Gt-n7o"; */
+"sJM-Gt-n7o.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "address"; ObjectID = "sZX-qs-a6c"; */
+"sZX-qs-a6c.text" = "address";
+
+/* Class = "UIButton"; normalTitle = "Resend Code"; ObjectID = "tQT-cb-cnU"; */
+"tQT-cb-cnU.normalTitle" = "Resend Code";
+
+/* Class = "UILabel"; text = "Remember Me"; ObjectID = "tSI-Ot-4I0"; */
+"tSI-Ot-4I0.text" = "Remember Me";
+
+/* Class = "UIButton"; normalTitle = "See All"; ObjectID = "uOr-rg-KNc"; */
+"uOr-rg-KNc.normalTitle" = "See All";
+
+/* Class = "UILabel"; text = "Email Can't be empty"; ObjectID = "vHX-r1-iLb"; */
+"vHX-r1-iLb.text" = "Email Can't be empty";
+
+/* Class = "UILabel"; text = "Label default label color. i agreee to default label color. my name is videon"; ObjectID = "vaG-Fc-up4"; */
+"vaG-Fc-up4.text" = "Label default label color. i agreee to default label color. my name is videon";
+
+/* Class = "UILabel"; text = "Don't have an account?"; ObjectID = "vmP-OC-yCH"; */
+"vmP-OC-yCH.text" = "Don't have an account?";
+
+/* Class = "UILabel"; text = "188"; ObjectID = "wAP-z0-pyh"; */
+"wAP-z0-pyh.text" = "188";
+
+/* Class = "UILabel"; text = "IT Automation"; ObjectID = "wTy-Fb-pJ2"; */
+"wTy-Fb-pJ2.text" = "IT Automation";
+
+/* Class = "UILabel"; text = "password"; ObjectID = "wgS-cV-T6W"; */
+"wgS-cV-T6W.text" = "password";
+
+/* Class = "UIButton"; normalTitle = "Forgot Password"; ObjectID = "wky-R1-95Y"; */
+"wky-R1-95Y.normalTitle" = "Forgot Password";
+
+/* Class = "UILabel"; text = "Channels"; ObjectID = "xJQ-H5-j8p"; */
+"xJQ-H5-j8p.text" = "Channels";
+
+/* Class = "UILabel"; text = "CNN"; ObjectID = "xfN-79-Pfa"; */
+"xfN-79-Pfa.text" = "CNN";
+
+/* Class = "UIButton"; normalTitle = "See All"; ObjectID = "xgk-Wn-gTl"; */
+"xgk-Wn-gTl.normalTitle" = "See All";
+
+/* Class = "UILabel"; text = "email"; ObjectID = "xgk-uS-kbB"; */
+"xgk-uS-kbB.text" = "email";
+
+/* Class = "UILabel"; text = "hera.pstu.cse@gmail.com"; ObjectID = "yJ3-Br-TTT"; */
+"yJ3-Br-TTT.text" = "hera.pstu.cse@gmail.com";
+
+/* Class = "UILabel"; text = "Label default label color. i agreee to default label color. my name is videon"; ObjectID = "yKZ-LU-kb8"; */
+"yKZ-LU-kb8.text" = "Label default label color. i agreee to default label color. my name is videon";
+
+/* Class = "UILabel"; text = "Create New Password"; ObjectID = "yct-cV-NZr"; */
+"yct-cV-NZr.text" = "Create New Password";
+
+/* Class = "UIButton"; normalTitle = "Sign Out"; ObjectID = "yvI-UO-O1d"; */
+"yvI-UO-O1d.normalTitle" = "Sign Out";
+
+/* Class = "UILabel"; text = "0:2:8"; ObjectID = "zpw-H4-jWK"; */
+"zpw-H4-jWK.text" = "0:2:8";

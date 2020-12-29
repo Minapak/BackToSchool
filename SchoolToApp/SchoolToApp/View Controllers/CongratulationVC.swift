@@ -1,9 +1,10 @@
 //
 //  CongratulationVC.swift
-//  BackToSchool
+//  SchoolToApp
 //
-//  Created by 박은민 on 2020/12/23.
+//  Created by 박은민 on 2020/12/29.
 //
+
 import UIKit
 
 class CongratulationVC: UIViewController {

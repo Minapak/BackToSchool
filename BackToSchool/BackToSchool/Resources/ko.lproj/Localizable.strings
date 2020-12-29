@@ -1,0 +1,47 @@
+/* 
+  Localizable.strings
+  Videon
+
+  Created by W3E-61 on 10/24/20.
+  Copyright © 2020 W3Engineers Ltd. All rights reserved.
+*/
+
+"SeeAllKey" = "See All";
+"LiveTvKey" = "Live TV";
+"FeaturedKey" = "Featured";
+"MostPopularKey" = "Most Popular";
+"MostRecentKey" = "Most Recent";
+"ProfileKey" = "Profile";
+"SettingsKey" = "Settings";
+"PlayListKey" = "Playlist";
+"SignOutKey" = "Sign Out";
+"FavouriteKey" = "FAVOURITE";
+"PlaylistKey" = "PLAYLIST";
+"AboutUsKey" = "About us";
+"PrivacyPolicyKey" = "Privacy & policy";
+"SignOutKey" = "Sign Out";
+"SignInKey" = "Sign In";
+"SuggestedTvKey" = "Suggested Tv";
+"SuggestedVideosKey" = "Suggested videos";
+"RateThisKey" = "Rate This";
+
+"PleaseLogInKey" = "Please Login to get access your profile";
+"LoginKey" = "Login";
+
+"loginWithFBKey" = "Login With Facebook";
+"loginWithGoogleKey" = "Login With Google";
+"forgotPasswordKey" = "Forgot Password";
+"signUpKey" = "Sign Up";
+"orKey" = "OR";
+"emailKey" = "email";
+"passwordKey" = "password";
+"rememberPasswordKey" = "Remember me";
+"dontHaveAccountKey" = "Don't have an account?";
+"userNameKey" = "username";
+"confirmPasswordKey" = "confirm password";
+"youAgreeKey" = "You agree to Videon's";
+"privacyPolicyKey" = "Privacy Policy";
+"alreadyHaveAccountKey" = "Already have an account?";
+
+
+
