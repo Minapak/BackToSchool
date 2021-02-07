@@ -32,7 +32,7 @@ class EMailVerificationVC: UIViewController, UITextFieldDelegate {
     
     var email = ""
     var countdownTimer: Timer!
-    var totalTime = 60
+    var totalTime = 120
     var verificationTokenFromServer = ""
     
     override func viewDidLoad() {
@@ -55,7 +55,7 @@ class EMailVerificationVC: UIViewController, UITextFieldDelegate {
         }
     }
     func startTimer() {
-        self.totalTime = 60
+        self.totalTime = 120
         countdownTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
         //self.proceedButton.isEnabled = true
         self.resendButton.isEnabled = false
@@ -94,7 +94,7 @@ class EMailVerificationVC: UIViewController, UITextFieldDelegate {
                     if response != nil {
                         if (response.status == 200)
                         {
-                            self.showToast(message: "4 digit code sent to your email")
+                            self.showToast(message: "회원님의 이메일로 인증번호 4자리를 보냈습니다.")
                             
                         }
                         else {

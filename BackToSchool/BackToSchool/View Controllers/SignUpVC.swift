@@ -11,6 +11,10 @@ import SimpleCheckbox
 import Firebase
 import LGButton
 import ZKProgressHUD
+import SwiftyJSON
+import Alamofire
+import MBProgressHUD
+import SlideMenuControllerSwift
 
 class SignUpVC: UIViewController, ValidationDelegate {
     let validator = Validator()
@@ -50,7 +54,7 @@ class SignUpVC: UIViewController, ValidationDelegate {
     
     
     @IBAction func signUpButtonAction(_ sender: Any) {
-        print("Validating...")
+        print("검증중...")
         validator.validate(self)
         
     }
@@ -158,12 +162,25 @@ class SignUpVC: UIViewController, ValidationDelegate {
         // submit the form
         if(checkBox.isChecked)
         {
-            // Videon Server Sign Up:
+            // Back To School Server Sign Up:
             // Email : 1 Google : 2 Facebook : 3
             // Social ID will be empty for Email, only applied for fb and google
-            doSignUp(registrationType: 1, socialId: "", userName: self.userNameTextField.text!, email: self.emailTextField.text!, password: self.passwordTextField.text!)
+            doSignUp(registrationType: 1,
+                     socialId: "",
+                     userName: self.userNameTextField.text!,
+                     email: self.emailTextField.text!,
+                     password: self.passwordTextField.text!)
+            
+            let urlString = API_URL + "register.php"
+            let params: NSDictionary = ["username":self.userNameTextField.text!,
+                                        "email":self.emailTextField.text!,
+                                        "password":self.passwordTextField.text!,
+                                        "device_type":"2",
+                                        "device_token":UserDefaultManager.getStringFromUserDefaults(key: UD_FcmToken)]
+            self.Webservice_Register(url: urlString, params: params)
+            
         } else {
-            showAlertDialog(title: "Warning!", message: "Please agree privacy policy berofe sign up.")
+            showAlertDialog(title: "Warning!", message: "회원가입을 하기 전 약관에 동의해주세요!.")
         }
         
     }
@@ -181,19 +198,19 @@ class SignUpVC: UIViewController, ValidationDelegate {
                 switch AuthErrorCode(rawValue: error.code) {
                 case .operationNotAllowed:
                     // Error: The given sign-in provider is disabled for this Firebase project. Enable it in the Firebase console, under the sign-in method tab of the Auth section.
-                    self.showAlertDialog(title: "Error!", message: "The given sign-in provider is disabled for this Firebase project. Enable it in the Firebase console, under the sign-in method tab of the Auth section.")
+                    self.showAlertDialog(title: "Error!", message: "파이어베이스 에러.")
                     
                 case .emailAlreadyInUse:
                     // Error: The email address is already in use by another account.
-                    self.showAlertDialog(title: "Error!", message: "The email address is already in use by another account.")
+                    self.showAlertDialog(title: "Error!", message: "지금 적은 이메일 주소는 이미 있는 계정입니다.")
                     
                 case .invalidEmail:
                     // Error: The email address is badly formatted.
-                    self.showAlertDialog(title: "Error!", message: "The email address is badly formatted.")
+                    self.showAlertDialog(title: "Error!", message: "이메일 주소의 형식이 잘못 되었습니다.")
                     
                 case .weakPassword:
                     // Error: The password must be 6 characters long or more.
-                    self.showAlertDialog(title: "Error!", message: "The password must be 6 characters long or more.")
+                    self.showAlertDialog(title: "Error!", message: "비밀번호는 6자리 이상을 적어주셔야 합니다.")
                     
                 default:
                     print("Error: \(error.localizedDescription)")
@@ -203,6 +220,15 @@ class SignUpVC: UIViewController, ValidationDelegate {
                 print("User signs up successfully")
                 let newUserInfo = Auth.auth().currentUser
                 let email = newUserInfo?.email
+                
+                let urlString = API_URL + "register.php"
+                let params: NSDictionary = ["username":newUserInfo,
+                                            "email":email,
+                                            "password":password,
+                                            "device_type":"2",
+                                            "device_token":UserDefaultManager.getStringFromUserDefaults(key: UD_FcmToken)]
+                self.Webservice_Register(url: urlString, params: params)
+                
                 self.showToast(message: "User signs up successfully")
                 
             }
@@ -231,8 +257,8 @@ class SignUpVC: UIViewController, ValidationDelegate {
                                     let vc = self.storyboard?.instantiateViewController(withIdentifier: "EMailVerificationVC") as! EMailVerificationVC
                                     vc.email = email
                                     self.navigationController?.pushViewController(vc, animated: true)
-                                    
-                                } else {
+
+                                }else {
                                     var user = UserModel.init()
                                     user.id = userMap[AppConstants.ServerKey.ID] as? String ?? ""
                                     user.email = userMap[AppConstants.ServerKey.EMAIL] as? String ?? ""
@@ -240,8 +266,16 @@ class SignUpVC: UIViewController, ValidationDelegate {
                                     user.username = userMap[AppConstants.ServerKey.USERNAME] as? String ?? ""
                                     VideonManager.shared().setMyData(user: user)
                                     
+                                    let urlString = API_URL + "register.php"
+                                    let params: NSDictionary = ["username":user.username,
+                                                                "email":user.email,
+                                                                "password":password,
+                                                                "device_type":"2",
+                                                                "device_token":UserDefaultManager.getStringFromUserDefaults(key: UD_FcmToken)]
+                                    self.Webservice_Register(url: urlString, params: params)
+                                    
                                     self.navigationController?.popToRootViewController(animated: true)
-                                }
+                              }
                                 
                                 
                             }
@@ -251,9 +285,50 @@ class SignUpVC: UIViewController, ValidationDelegate {
                         
                         
                     } else {
-                        self.showToast(message: "Opps! Something went wrong, please try again.")
+                        self.showToast(message: "잘 못 보내졌습니다. 다시 시도 해주세요.")
                     }
                     
+                }
+            }
+        }
+    }
+}
+//MARK: Webservices
+extension SignUpVC
+{
+    func Webservice_Register(url:String, params:NSDictionary) -> Void {
+        WebServices().CallGlobalAPI(url: url, headers: [:], parameters:params, httpMethod: "POST", progressView:true, uiView:self.view, networkAlert: true) {(_ jsonResponse:JSON? , _ strErrorMessage:String) in
+            print(url, "url")
+            print(params, "params")
+            if strErrorMessage.count != 0 {
+                showAlertMessage(titleStr: Bundle.main.displayName!, messageStr: strErrorMessage)
+            }
+            else {
+                print(jsonResponse!)
+                let responseCode = jsonResponse!["ResponseCode"].stringValue
+                print("responseCode : "+responseCode)
+                if responseCode == "1" {
+                    let responseData = jsonResponse!["ResponseData"].dictionaryValue
+                    print(responseData , ": responseData")
+                    let userId = responseData["id"]?.stringValue
+                    print(userId , " : userId")
+                    UserDefaultManager.setStringToUserDefaults(value: userId!, key: UD_userId)
+                    //유저 이름 쉐어드프리퍼런스
+                    UserDefaultManager.setStringToUserDefaults(value: self.userNameTextField.text!, key: UD_userName)
+                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "SignInVC") as! SignInVC
+                    self.navigationController?.pushViewController(vc, animated: true)
+                    
+//                    let objVC = self.storyboard?.instantiateViewController(withIdentifier: "HomeVC") as! HomeVC
+//                    let sideMenuViewController = self.storyboard?.instantiateViewController(withIdentifier: "SideMenuVC") as! SideMenuVC
+//                    let appNavigation: UINavigationController = UINavigationController(rootViewController: objVC)
+//                    appNavigation.setNavigationBarHidden(true, animated: true)
+//                    let slideMenuController = SlideMenuController(mainViewController: appNavigation, leftMenuViewController: sideMenuViewController)
+//                    slideMenuController.changeLeftViewWidth(UIScreen.main.bounds.width * 0.8)
+//                    slideMenuController.removeLeftGestures()
+//                    UIApplication.shared.windows[0].rootViewController = slideMenuController
+            }
+                else {
+                    showAlertMessage(titleStr: Bundle.main.displayName!, messageStr: jsonResponse!["ResponseMessage"].stringValue)
                 }
             }
         }

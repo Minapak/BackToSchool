@@ -20,8 +20,9 @@ class SettingsVC: UIViewController {
     
     @IBAction func backButtonAction(_ sender: Any) {
         
-        self.navigationController?.popViewController(animated: true)
-        
+       
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     @IBAction func aboutUsButtonAction(_ sender: Any) {
         // WebVC
@@ -53,7 +54,7 @@ class SettingsVC: UIViewController {
             // Call for sign out
             do {
                 try Auth.auth().signOut()
-                self.showToast(message: "Sign out successful")
+                self.showToast(message: "로그아웃 성공")
                 signInSignOutButton.setTitle("SignInKey".localizableString(loc: appLanguageCode), for: .normal)
             } catch {
                 print("Sign out error")
@@ -97,7 +98,7 @@ class SettingsVC: UIViewController {
         let pasteboard = UIPasteboard.general
         pasteboard.string = textField.text
         
-        showToast(message: "Text copied to clipboard")
+        showToast(message: "텍스트를 카피했습니다.")
     }
     override func viewDidLoad() {
         super.viewDidLoad()

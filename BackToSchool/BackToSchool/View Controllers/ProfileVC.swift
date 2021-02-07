@@ -21,7 +21,7 @@ class ProfileVC: UIViewController {
     
     // this is our array of arrays
     var items = [[VideoObject]]() //let items = [favVideoList, videoPlayList]
-    let  sections = ["FAVOURITE", "PLAYLIST"] //let items = [["Apple", "Mango", "Grapes"],["Mac", "Surface", "Windows"]]
+    let  sections = ["내가 좋아하는 영상", "나의 영상 리스트"] //let items = [["Apple", "Mango", "Grapes"],["Mac", "Surface", "Windows"]]
     
     
     override func viewDidLoad() {

@@ -165,7 +165,6 @@ class ServerMapper {
         param[AppConstants.ServerKey.PASSWORD] = password
         return (url, param)
     }
-    
     // Send Code
     static func sendCodeInfo(email:String) -> (url: String, param: [String: Any] )
     {

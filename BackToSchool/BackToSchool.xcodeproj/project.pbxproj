@@ -43,6 +43,38 @@
 		54206FDB25931C6700B64780 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54206FDA25931C6700B64780 /* AppConstants.swift */; };
 		54206FDE25931C8D00B64780 /* ServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54206FDD25931C8D00B64780 /* ServerManager.swift */; };
 		54206FE125931C9B00B64780 /* ServerMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54206FE025931C9B00B64780 /* ServerMapper.swift */; };
+		547FD76025CA5DEF005C08D2 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 547FD75F25CA5DEF005C08D2 /* UserNotifications.framework */; };
+		54881456259C6765003EBF02 /* TutorialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54881455259C6765003EBF02 /* TutorialVC.swift */; };
+		54881459259C6776003EBF02 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54881458259C6776003EBF02 /* WelcomeVC.swift */; };
+		5488145C259C6787003EBF02 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5488145B259C6787003EBF02 /* RegisterVC.swift */; };
+		5488145F259C6795003EBF02 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5488145E259C6795003EBF02 /* LoginVC.swift */; };
+		54881462259C67A9003EBF02 /* ForgetPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54881461259C67A9003EBF02 /* ForgetPasswordVC.swift */; };
+		54881465259C6804003EBF02 /* SideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54881464259C6804003EBF02 /* SideMenuVC.swift */; };
+		54881468259C6812003EBF02 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54881467259C6812003EBF02 /* HomeVC.swift */; };
+		5488146B259C682A003EBF02 /* LatestWallpaperVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5488146A259C682A003EBF02 /* LatestWallpaperVC.swift */; };
+		5488146E259C685A003EBF02 /* TrendingWallpaperVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5488146D259C685A003EBF02 /* TrendingWallpaperVC.swift */; };
+		54881471259C6873003EBF02 /* CategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54881470259C6873003EBF02 /* CategoryVC.swift */; };
+		54881474259C6884003EBF02 /* WallpaperVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54881473259C6884003EBF02 /* WallpaperVC.swift */; };
+		54881477259C689F003EBF02 /* WallpaperPreviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54881476259C689F003EBF02 /* WallpaperPreviewVC.swift */; };
+		5488147A259C68B1003EBF02 /* UserDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54881479259C68B1003EBF02 /* UserDetailVC.swift */; };
+		54881480259C68FC003EBF02 /* MyWallpapersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5488147F259C68FC003EBF02 /* MyWallpapersVC.swift */; };
+		54881483259C6917003EBF02 /* PendingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54881482259C6917003EBF02 /* PendingVC.swift */; };
+		54881486259C692A003EBF02 /* ApprovedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54881485259C692A003EBF02 /* ApprovedVC.swift */; };
+		54881489259C6941003EBF02 /* RejectedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54881488259C6941003EBF02 /* RejectedVC.swift */; };
+		5488148C259C6960003EBF02 /* AddWallpaperVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5488148B259C6960003EBF02 /* AddWallpaperVC.swift */; };
+		54881496259C6A2B003EBF02 /* FavouriteVC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54881495259C6A2B003EBF02 /* FavouriteVC1.swift */; };
+		5488149A259C6ED9003EBF02 /* ChangePasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54881499259C6ED9003EBF02 /* ChangePasswordVC.swift */; };
+		5488149D259C6F2E003EBF02 /* EditProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5488149C259C6F2E003EBF02 /* EditProfileVC.swift */; };
+		548814A0259C6F7A003EBF02 /* WebviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5488149F259C6F7A003EBF02 /* WebviewVC.swift */; };
+		548814A4259C6FD5003EBF02 /* Webservices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548814A3259C6FD5003EBF02 /* Webservices.swift */; };
+		548814A8259C703A003EBF02 /* Reachablility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548814A7259C703A003EBF02 /* Reachablility.swift */; };
+		548814AB259C7068003EBF02 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548814AA259C7068003EBF02 /* UserDefaults.swift */; };
+		548814AE259C707B003EBF02 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548814AD259C707B003EBF02 /* Constant.swift */; };
+		548814B1259C70E1003EBF02 /* ViewPagerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548814B0259C70E1003EBF02 /* ViewPagerTabView.swift */; };
+		548814B5259C711E003EBF02 /* ViewPagerTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548814B4259C711E003EBF02 /* ViewPagerTab.swift */; };
+		548814B9259C714B003EBF02 /* ViewPagerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548814B8259C714B003EBF02 /* ViewPagerController.swift */; };
+		548814BC259C7164003EBF02 /* ViewPagerOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548814BB259C7164003EBF02 /* ViewPagerOptions.swift */; };
+		548814BF259C8070003EBF02 /* SettingsVC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548814BE259C8070003EBF02 /* SettingsVC1.swift */; };
 		54FB450925931E00002ADBE7 /* about-us.html in Resources */ = {isa = PBXBuildFile; fileRef = 54FB450825931E00002ADBE7 /* about-us.html */; };
 		54FB450C25931F41002ADBE7 /* MoreMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54FB450B25931F41002ADBE7 /* MoreMenuCell.xib */; };
 		54FB450F25931F73002ADBE7 /* MoreMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FB450E25931F73002ADBE7 /* MoreMenuCell.swift */; };
@@ -101,6 +133,39 @@
 		54206FDD25931C8D00B64780 /* ServerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerManager.swift; sourceTree = "<group>"; };
 		54206FE025931C9B00B64780 /* ServerMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerMapper.swift; sourceTree = "<group>"; };
 		54206FE425931D0100B64780 /* privacy-policy.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "privacy-policy.html"; sourceTree = "<group>"; };
+		547FD75F25CA5DEF005C08D2 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		54881455259C6765003EBF02 /* TutorialVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialVC.swift; sourceTree = "<group>"; };
+		54881458259C6776003EBF02 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
+		5488145B259C6787003EBF02 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		5488145E259C6795003EBF02 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		54881461259C67A9003EBF02 /* ForgetPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordVC.swift; sourceTree = "<group>"; };
+		54881464259C6804003EBF02 /* SideMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuVC.swift; sourceTree = "<group>"; };
+		54881467259C6812003EBF02 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		5488146A259C682A003EBF02 /* LatestWallpaperVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestWallpaperVC.swift; sourceTree = "<group>"; };
+		5488146D259C685A003EBF02 /* TrendingWallpaperVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingWallpaperVC.swift; sourceTree = "<group>"; };
+		54881470259C6873003EBF02 /* CategoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryVC.swift; sourceTree = "<group>"; };
+		54881473259C6884003EBF02 /* WallpaperVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperVC.swift; sourceTree = "<group>"; };
+		54881476259C689F003EBF02 /* WallpaperPreviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperPreviewVC.swift; sourceTree = "<group>"; };
+		54881479259C68B1003EBF02 /* UserDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailVC.swift; sourceTree = "<group>"; };
+		5488147F259C68FC003EBF02 /* MyWallpapersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWallpapersVC.swift; sourceTree = "<group>"; };
+		54881482259C6917003EBF02 /* PendingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PendingVC.swift; sourceTree = "<group>"; };
+		54881485259C692A003EBF02 /* ApprovedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApprovedVC.swift; sourceTree = "<group>"; };
+		54881488259C6941003EBF02 /* RejectedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RejectedVC.swift; sourceTree = "<group>"; };
+		5488148B259C6960003EBF02 /* AddWallpaperVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWallpaperVC.swift; sourceTree = "<group>"; };
+		54881495259C6A2B003EBF02 /* FavouriteVC1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouriteVC1.swift; sourceTree = "<group>"; };
+		54881499259C6ED9003EBF02 /* ChangePasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordVC.swift; sourceTree = "<group>"; };
+		5488149C259C6F2E003EBF02 /* EditProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileVC.swift; sourceTree = "<group>"; };
+		5488149F259C6F7A003EBF02 /* WebviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebviewVC.swift; sourceTree = "<group>"; };
+		548814A3259C6FD5003EBF02 /* Webservices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservices.swift; sourceTree = "<group>"; };
+		548814A7259C703A003EBF02 /* Reachablility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachablility.swift; sourceTree = "<group>"; };
+		548814AA259C7068003EBF02 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		548814AD259C707B003EBF02 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		548814B0259C70E1003EBF02 /* ViewPagerTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPagerTabView.swift; sourceTree = "<group>"; };
+		548814B4259C711E003EBF02 /* ViewPagerTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPagerTab.swift; sourceTree = "<group>"; };
+		548814B8259C714B003EBF02 /* ViewPagerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPagerController.swift; sourceTree = "<group>"; };
+		548814BB259C7164003EBF02 /* ViewPagerOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPagerOptions.swift; sourceTree = "<group>"; };
+		548814BE259C8070003EBF02 /* SettingsVC1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVC1.swift; sourceTree = "<group>"; };
+		54DE644C25C9091B00B8B06A /* BackToSchool.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BackToSchool.entitlements; sourceTree = "<group>"; };
 		54FB450825931E00002ADBE7 /* about-us.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "about-us.html"; sourceTree = "<group>"; };
 		54FB450B25931F41002ADBE7 /* MoreMenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoreMenuCell.xib; sourceTree = "<group>"; };
 		54FB450E25931F73002ADBE7 /* MoreMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreMenuCell.swift; sourceTree = "<group>"; };
@@ -136,6 +201,7 @@
 			files = (
 				54206F5625930F2B00B64780 /* WebKit.framework in Frameworks */,
 				2663F83376FDDA2ECDCF97F2 /* Pods_BackToSchool.framework in Frameworks */,
+				547FD76025CA5DEF005C08D2 /* UserNotifications.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +229,9 @@
 		54206F3B25930B7800B64780 /* BackToSchool */ = {
 			isa = PBXGroup;
 			children = (
+				54DE644C25C9091B00B8B06A /* BackToSchool.entitlements */,
+				548814A2259C6FA2003EBF02 /* Webservices */,
+				54881454259C6229003EBF02 /* Controllers */,
 				54206F612593103C00B64780 /* View Controllers */,
 				54206F602593103000B64780 /* Storyboards */,
 				54206F5F2593101700B64780 /* Resources */,
@@ -258,6 +327,7 @@
 		54206F5F2593101700B64780 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				548814B3259C70E9003EBF02 /* PagerView */,
 				54FB472E25934E95002ADBE7 /* Localizable.strings */,
 				54206F4825930B7B00B64780 /* Assets.xcassets */,
 			);
@@ -276,6 +346,29 @@
 		54206F612593103C00B64780 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				54881455259C6765003EBF02 /* TutorialVC.swift */,
+				54881458259C6776003EBF02 /* WelcomeVC.swift */,
+				5488145B259C6787003EBF02 /* RegisterVC.swift */,
+				5488145E259C6795003EBF02 /* LoginVC.swift */,
+				54881461259C67A9003EBF02 /* ForgetPasswordVC.swift */,
+				54881464259C6804003EBF02 /* SideMenuVC.swift */,
+				54881467259C6812003EBF02 /* HomeVC.swift */,
+				5488146A259C682A003EBF02 /* LatestWallpaperVC.swift */,
+				5488146D259C685A003EBF02 /* TrendingWallpaperVC.swift */,
+				54881470259C6873003EBF02 /* CategoryVC.swift */,
+				54881473259C6884003EBF02 /* WallpaperVC.swift */,
+				54881476259C689F003EBF02 /* WallpaperPreviewVC.swift */,
+				54881479259C68B1003EBF02 /* UserDetailVC.swift */,
+				54881495259C6A2B003EBF02 /* FavouriteVC1.swift */,
+				5488147F259C68FC003EBF02 /* MyWallpapersVC.swift */,
+				54881482259C6917003EBF02 /* PendingVC.swift */,
+				54881485259C692A003EBF02 /* ApprovedVC.swift */,
+				54881488259C6941003EBF02 /* RejectedVC.swift */,
+				5488148B259C6960003EBF02 /* AddWallpaperVC.swift */,
+				548814BE259C8070003EBF02 /* SettingsVC1.swift */,
+				54881499259C6ED9003EBF02 /* ChangePasswordVC.swift */,
+				5488149C259C6F2E003EBF02 /* EditProfileVC.swift */,
+				5488149F259C6F7A003EBF02 /* WebviewVC.swift */,
 				54206F8A2593176800B64780 /* CongratulationVC.swift */,
 				54206F8E2593178F00B64780 /* CreatePasswordVC.swift */,
 				54206F912593181E00B64780 /* EMailVerificationVC.swift */,
@@ -309,9 +402,39 @@
 			path = HTML;
 			sourceTree = "<group>";
 		};
+		54881454259C6229003EBF02 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		548814A2259C6FA2003EBF02 /* Webservices */ = {
+			isa = PBXGroup;
+			children = (
+				548814A3259C6FD5003EBF02 /* Webservices.swift */,
+				548814A7259C703A003EBF02 /* Reachablility.swift */,
+				548814AA259C7068003EBF02 /* UserDefaults.swift */,
+				548814AD259C707B003EBF02 /* Constant.swift */,
+			);
+			path = Webservices;
+			sourceTree = "<group>";
+		};
+		548814B3259C70E9003EBF02 /* PagerView */ = {
+			isa = PBXGroup;
+			children = (
+				548814B0259C70E1003EBF02 /* ViewPagerTabView.swift */,
+				548814B4259C711E003EBF02 /* ViewPagerTab.swift */,
+				548814B8259C714B003EBF02 /* ViewPagerController.swift */,
+				548814BB259C7164003EBF02 /* ViewPagerOptions.swift */,
+			);
+			path = PagerView;
+			sourceTree = "<group>";
+		};
 		5863DDE6E9D7CCCC40202D83 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				547FD75F25CA5DEF005C08D2 /* UserNotifications.framework */,
 				54206F5525930F2B00B64780 /* WebKit.framework */,
 				0A7984CC86240348DEC1E3B7 /* Pods_BackToSchool.framework */,
 			);
@@ -469,43 +592,74 @@
 				54206FA1259318C200B64780 /* ProfileVC.swift in Sources */,
 				54FB452425932137002ADBE7 /* LiveTVCell.swift in Sources */,
 				54206FD225931BD600B64780 /* UIColor.swift in Sources */,
+				54881462259C67A9003EBF02 /* ForgetPasswordVC.swift in Sources */,
 				54FB4743259352EC002ADBE7 /* BMCustomPlayer.swift in Sources */,
+				548814A4259C6FD5003EBF02 /* Webservices.swift in Sources */,
+				548814AE259C707B003EBF02 /* Constant.swift in Sources */,
 				54206FD525931BEA00B64780 /* UIImageView.swift in Sources */,
+				54881459259C6776003EBF02 /* WelcomeVC.swift in Sources */,
+				5488146E259C685A003EBF02 /* TrendingWallpaperVC.swift in Sources */,
 				54FB451225931F90002ADBE7 /* AppUtils.swift in Sources */,
 				54FB4521259320EE002ADBE7 /* VideonCategoryCell.swift in Sources */,
 				54206FC925931B7900B64780 /* VideoManager.swift in Sources */,
+				548814B1259C70E1003EBF02 /* ViewPagerTabView.swift in Sources */,
 				54206FCF25931BC300B64780 /* String.swift in Sources */,
+				548814AB259C7068003EBF02 /* UserDefaults.swift in Sources */,
 				54206FC225931B2000B64780 /* AppModels.swift in Sources */,
 				54FB450F25931F73002ADBE7 /* MoreMenuCell.swift in Sources */,
 				54206FB32593194500B64780 /* TvPlayerVC.swift in Sources */,
 				54206F952593184200B64780 /* FavouriteVC.swift in Sources */,
+				54881477259C689F003EBF02 /* WallpaperPreviewVC.swift in Sources */,
 				54206FC525931B6300B64780 /* CredentialGenerator.swift in Sources */,
 				54206FCC25931B8D00B64780 /* Connectivity.swift in Sources */,
+				54881471259C6873003EBF02 /* CategoryVC.swift in Sources */,
+				54881486259C692A003EBF02 /* ApprovedVC.swift in Sources */,
 				54206F3D25930B7800B64780 /* AppDelegate.swift in Sources */,
 				54206FE125931C9B00B64780 /* ServerMapper.swift in Sources */,
 				54206F8B2593176800B64780 /* CongratulationVC.swift in Sources */,
+				5488149D259C6F2E003EBF02 /* EditProfileVC.swift in Sources */,
+				548814A0259C6F7A003EBF02 /* WebviewVC.swift in Sources */,
+				54881468259C6812003EBF02 /* HomeVC.swift in Sources */,
 				54FB47462593531B002ADBE7 /* BMPlayerCustomControlView.swift in Sources */,
 				54206FD825931C0400B64780 /* UIViewController.swift in Sources */,
 				54206FB62593197700B64780 /* VideoListVC.swift in Sources */,
 				54206FA4259318CD00B64780 /* ProfileVC2.swift in Sources */,
 				54206F982593186200B64780 /* ForgotPasswordVC.swift in Sources */,
 				54206FBF259319CD00B64780 /* NoInternetVC.swift in Sources */,
+				548814A8259C703A003EBF02 /* Reachablility.swift in Sources */,
 				54FB477925997ADA002ADBE7 /* ViewController.swift in Sources */,
+				5488147A259C68B1003EBF02 /* UserDetailVC.swift in Sources */,
+				548814B9259C714B003EBF02 /* ViewPagerController.swift in Sources */,
+				54881489259C6941003EBF02 /* RejectedVC.swift in Sources */,
+				5488149A259C6ED9003EBF02 /* ChangePasswordVC.swift in Sources */,
 				54206FAD2593191600B64780 /* SignUpVC.swift in Sources */,
+				5488148C259C6960003EBF02 /* AddWallpaperVC.swift in Sources */,
 				54206FB92593199F00B64780 /* VideoPlayerVC.swift in Sources */,
+				548814BC259C7164003EBF02 /* ViewPagerOptions.swift in Sources */,
+				548814BF259C8070003EBF02 /* SettingsVC1.swift in Sources */,
+				54881465259C6804003EBF02 /* SideMenuVC.swift in Sources */,
+				5488145C259C6787003EBF02 /* RegisterVC.swift in Sources */,
 				54206F9E2593189900B64780 /* PleaseLoginVC.swift in Sources */,
 				54FB465525932B9D002ADBE7 /* PasswordRecoveryVC.swift in Sources */,
+				54881496259C6A2B003EBF02 /* FavouriteVC1.swift in Sources */,
 				54206F3F25930B7800B64780 /* SceneDelegate.swift in Sources */,
 				54206FDB25931C6700B64780 /* AppConstants.swift in Sources */,
+				54881456259C6765003EBF02 /* TutorialVC.swift in Sources */,
+				5488145F259C6795003EBF02 /* LoginVC.swift in Sources */,
 				54206F8F2593178F00B64780 /* CreatePasswordVC.swift in Sources */,
 				54206FBC259319B300B64780 /* WebVC.swift in Sources */,
 				54206FB02593192C00B64780 /* TvListVC.swift in Sources */,
+				54881483259C6917003EBF02 /* PendingVC.swift in Sources */,
+				5488146B259C682A003EBF02 /* LatestWallpaperVC.swift in Sources */,
 				54206F9B2593187A00B64780 /* PlaylistVC.swift in Sources */,
+				548814B5259C711E003EBF02 /* ViewPagerTab.swift in Sources */,
 				54206F922593181E00B64780 /* EMailVerificationVC.swift in Sources */,
 				54FB451B259320C1002ADBE7 /* MostRecentCell.swift in Sources */,
+				54881480259C68FC003EBF02 /* MyWallpapersVC.swift in Sources */,
 				54FB4518259320A7002ADBE7 /* MostPopularCell.swift in Sources */,
 				54FB451E259320D3002ADBE7 /* VideoListCell.swift in Sources */,
 				54FB451525932085002ADBE7 /* FeaturedCell.swift in Sources */,
+				54881474259C6884003EBF02 /* WallpaperVC.swift in Sources */,
 				54206FA7259318E400B64780 /* SettingsVC.swift in Sources */,
 				54206FAA2593190100B64780 /* SignInVC.swift in Sources */,
 			);
@@ -672,8 +826,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BackToSchool/BackToSchool.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = QXT586NGNR;
 				INFOPLIST_FILE = "$(SRCROOT)/BackToSchool/Application/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
@@ -681,6 +836,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.com.bori.BackToSchool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -694,8 +850,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BackToSchool/BackToSchool.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = QXT586NGNR;
 				INFOPLIST_FILE = "$(SRCROOT)/BackToSchool/Application/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
@@ -703,6 +860,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.com.bori.BackToSchool;
 				PRODUCT_NAME = "$(TARGET_NAME)";

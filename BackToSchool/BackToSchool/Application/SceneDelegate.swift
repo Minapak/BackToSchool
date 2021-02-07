@@ -8,6 +8,7 @@
 
 import UIKit
 import FBSDKLoginKit
+import SlideMenuControllerSwift
 
 @available(iOS 13.0, *)
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
@@ -15,20 +16,68 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
 
 
-    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options
+                connectionOptions: UIScene.ConnectionOptions) {
+       
         guard let windowScene = (scene as? UIWindowScene) else { return }
 
-        let window = UIWindow(windowScene: windowScene)
-        self.window = window
-        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-        let newViewcontroller:UIViewController = storyBoard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
-        let navigationController = UINavigationController(rootViewController: newViewcontroller)
-        navigationController.navigationBar.isHidden = true
-        window.rootViewController = navigationController
-        window.makeKeyAndVisible()
+        self.window?.overrideUserInterfaceStyle = .light
+        
+        if UserDefaults.standard.value(forKey: UD_isTutorial) == nil || UserDefaults.standard.value(forKey: UD_isTutorial) as! String == "" || UserDefaults.standard.value(forKey: UD_isTutorial) as! String == "N/A" {
+            let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+            let objVC = storyBoard.instantiateViewController(withIdentifier: "TutorialVC") as! TutorialVC
+            let nav : UINavigationController = UINavigationController(rootViewController: objVC)
+            nav.navigationBar.isHidden = true
+            self.window?.rootViewController = nav
+        }
+        else {
+            if
+                UserDefaults.standard.value(forKey: UD_userId) == nil || UserDefaults.standard.value(forKey: UD_userId) as! String == "" || UserDefaults.standard.value(forKey: UD_userId) as! String == "N/A" {
+//                let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+//                let objVC = storyBoard.instantiateViewController(withIdentifier: "WelcomeVC") as! WelcomeVC
+//                let nav : UINavigationController = UINavigationController(rootViewController: objVC)
+//                nav.navigationBar.isHidden = true
+//                self.window?.rootViewController = nav
+                
+                let window = UIWindow(windowScene: windowScene)
+                self.window = window
+                let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+                let newViewcontroller:UIViewController = storyBoard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+                let navigationController = UINavigationController(rootViewController: newViewcontroller)
+                navigationController.navigationBar.isHidden = true
+                window.rootViewController = navigationController
+                window.makeKeyAndVisible()
+            }
+            else {
+                let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+                let objVC = storyBoard.instantiateViewController(withIdentifier: "HomeVC") as! HomeVC
+                let sideMenuViewController = storyBoard.instantiateViewController(withIdentifier: "SideMenuVC") as! SideMenuVC
+                let appNavigation: UINavigationController = UINavigationController(rootViewController: objVC)
+                appNavigation.setNavigationBarHidden(true, animated: true)
+                let slideMenuController = SlideMenuController(mainViewController: appNavigation, leftMenuViewController: sideMenuViewController)
+                slideMenuController.changeLeftViewWidth(UIScreen.main.bounds.width * 0.8)
+                slideMenuController.removeLeftGestures()
+                self.window?.rootViewController = slideMenuController
+                
+//                let window = UIWindow(windowScene: windowScene)
+//                self.window = window
+//                let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+//                let newViewcontroller:UIViewController = storyBoard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+//                let navigationController = UINavigationController(rootViewController: newViewcontroller)
+//                navigationController.navigationBar.isHidden = true
+//                window.rootViewController = navigationController
+//                window.makeKeyAndVisible()
+            }
+        }
+        
+//        let window = UIWindow(windowScene: windowScene)
+//        self.window = window
+//        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+//        let newViewcontroller:UIViewController = storyBoard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+//        let navigationController = UINavigationController(rootViewController: newViewcontroller)
+//        navigationController.navigationBar.isHidden = true
+//        window.rootViewController = navigationController
+//        window.makeKeyAndVisible()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -76,5 +125,5 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
 
-}
 
+}

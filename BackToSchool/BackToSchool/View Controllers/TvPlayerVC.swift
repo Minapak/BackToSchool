@@ -68,7 +68,7 @@ class TvPlayerVC: UIViewController, GADBannerViewDelegate, GADInterstitialDelega
             if (liveTvObject.link != "") {
                 playYoutubeVimeoURL(remoteURL: liveTvObject.link)
             } else if (liveTvObject.link == ""){
-                playYoutubeVimeoURL(remoteURL: "https://youtu.be/21X5lGlDOfg")
+                playYoutubeVimeoURL(remoteURL: "https://www.youtube.com/watch?v=ncoVTba_JWA")
             }
             else{
                 showAlertDialog(title: "Error!", message: "No valid video url found")
@@ -198,7 +198,7 @@ class TvPlayerVC: UIViewController, GADBannerViewDelegate, GADInterstitialDelega
     // MARK: - GADInterstitialDelegate methods
     
     func interstitialDidReceiveAd(_ ad: GADInterstitial) {
-        print("Interstitial loaded successfully")
+        print("전면광고 loaded successfully")
         ad.present(fromRootViewController: self)
     }
     

@@ -31,7 +31,7 @@ class ProfileVC2: UIViewController {
 
         
         if Connectivity.isConnectedToInternet {
-            print("Yes! internet is available.")
+            print("인터넷 가능.")
             // do some tasks..
             profileImageView.layer.cornerRadius = profileImageView.frame.width/2
             profileImageView.layer.borderWidth = 1

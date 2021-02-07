@@ -50,6 +50,7 @@ class VideonManager  {
         }
     }
     
+    
     // Email verification
     func verifyEmail(emailValue: String, verificationTokenValue: String, complitionHandler: @escaping(_ responseData: ResponseModel, _ errorMsg: String) -> Void){
         let requestInfo = ServerMapper.emailVerificationInfo(email: emailValue, verificationToken: verificationTokenValue)

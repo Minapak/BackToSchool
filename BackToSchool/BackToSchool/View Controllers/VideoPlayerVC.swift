@@ -79,12 +79,12 @@ class VideoPlayerVC: UIViewController {
                 do {
                     try Auth.auth().signOut()
                     // Sign out successful
-                    self.showToast(message: "Sign out successfully")
+                    self.showToast(message: "로그 아웃 완료")
                 } catch {
-                    print("Sign out error")
-                    self.showToast(message: "Sign out error")
+                    print("로그 아웃 에러!")
+                    self.showToast(message: "로그 아웃 에러!")
                 }
-                showAlertDialog(title: "Warning!", message: "User information missing, please re-login to access this feature.")
+                showAlertDialog(title: "Warning!", message: "사용자 정보가 없습니다. 다시 로그인 해주세요.")
                 
                 
             }
@@ -92,7 +92,7 @@ class VideoPlayerVC: UIViewController {
                 
                 if rateThisButton.isSelected {
                     // You have already rated this video
-                    showToast(message: "You have already rated this video")
+                    showToast(message: "이미 이 영상을 평가했습니다.")
                 } else {
                     showPickerController()
                 }
@@ -119,13 +119,13 @@ class VideoPlayerVC: UIViewController {
                 
                 do {
                     try Auth.auth().signOut()
-                    self.showToast(message: "Sign out successful")
+                    self.showToast(message: "로그아웃 성공")
                 } catch {
-                    print("Sign out error")
-                    self.showToast(message: "Sign out error")
+                    print("로그아웃 에러!")
+                    self.showToast(message: "로그아웃 에러!")
                 }
                 
-                showAlertDialog(title: "Warning!", message: "User information missing, please re-login to access this feature.")
+                showAlertDialog(title: "Warning!", message: "사용자 정보가 없습니다. 다시 로그인 해주세요.")
                 
                 
             }
@@ -152,9 +152,9 @@ class VideoPlayerVC: UIViewController {
     @IBAction func externalShareButtonAction(_ sender: Any) {
         
         if self.isUserLoggedIn() {
-            let text = "Videon"
-            let image = UIImage(named: "ic_logo_fav")
-            let myWebsite = NSURL(string:"https://codecanyon.net/user/w3engineers/portfolio")
+            let text = "Back To School"
+            let image = UIImage(named: "logo")
+            let myWebsite = NSURL(string:"http://3.138.134.200/BackToSchool/about-us.php")
             let shareAll = [text , image! , myWebsite!] as [Any]
             let activityViewController = UIActivityViewController(activityItems: shareAll, applicationActivities: nil)
             activityViewController.popoverPresentationController?.sourceView = self.view
@@ -180,13 +180,13 @@ class VideoPlayerVC: UIViewController {
                 // Call for sign out
                 do {
                     try Auth.auth().signOut()
-                    self.showToast(message: "Sign out successful")
+                    self.showToast(message: "로그아웃 성공")
                 } catch {
-                    print("Sign out error")
-                    self.showToast(message: "Sign out error")
+                    print("로그아웃 에러")
+                    self.showToast(message: "로그아웃 에러")
                 }
                 
-                showAlertDialog(title: "Warning!", message: "User information missing, please re-login to access this feature.")
+                showAlertDialog(title: "Warning!", message: "사용자 정보가 없습니다. 다시 로그인 해주세요.")
                 
             } else {
                 if favouriteButton.isSelected {
@@ -261,7 +261,7 @@ class VideoPlayerVC: UIViewController {
         }
     }
     func showPickerController() {
-        let alertController = UIAlertController(title: "Rate Us", message: nil, preferredStyle: .alert)
+        let alertController = UIAlertController(title: "리뷰쓰기", message: nil, preferredStyle: .alert)
         let customView = UIView()
         alertController.view.addSubview(customView)
         customView.translatesAutoresizingMaskIntoConstraints = false
@@ -299,23 +299,23 @@ class VideoPlayerVC: UIViewController {
         
         
         
-        let selectAction = UIAlertAction(title: "Submit", style: .default) { (action) in
-            print("Submit Selected")
+        let selectAction = UIAlertAction(title: "보내기", style: .default) { (action) in
+            print("보내기 선택")
             if(textView.text != "") {
                 if(self.videoRating <= 0){
-                    self.showAlertDialog(title: "Warning!", message: "Please give some rating before submitting.")
+                    self.showAlertDialog(title: "잠시만!", message: "제출하기 전에 별점을 지정하세요.")
                 } else {
                     self.submitReview(videoId: Int(self.videoObject.id)!, userId: Int(self.user.id)!, rating: self.videoRating, review: textView.text ?? "")
                 }
                 
                 
             } else {
-                self.showAlertDialog(title: "Warning!", message: "Please write a short comment before submitting.")
+                self.showAlertDialog(title: "잠시만!", message: "제출하기 전에 짧은 코멘트를 작성하세요.")
             }
         }
         
-        let cancelAction = UIAlertAction(title: "Cancel", style: .destructive){ (action) in
-            print("Cancel Selected")
+        let cancelAction = UIAlertAction(title: "취소", style: .destructive){ (action) in
+            print("취소 선택")
         }
         alertController.addAction(selectAction)
         alertController.addAction(cancelAction)
@@ -392,7 +392,7 @@ class VideoPlayerVC: UIViewController {
                     if response != nil {
                         if (response.status == 200)
                         {
-                            self.showToast(message: "Added to favourite")
+                            self.showToast(message: "내가 좋아하는 영상으로 추가했습니다!")
                             self.favouriteButton.isSelected = true
                             self.favouriteButton.layer.borderColor = UIColor.orange.cgColor
                         }
@@ -422,7 +422,7 @@ class VideoPlayerVC: UIViewController {
                     if response != nil {
                         if (response.status == 200)
                         {
-                            self.showToast(message: "Removed from favourite")
+                            self.showToast(message: "내가 좋아하는 영상에서 제외했습니다.")
                             self.favouriteButton.isSelected = false
                             self.favouriteButton.layer.borderColor = UIColor.lightGray.cgColor
                         }
@@ -458,7 +458,7 @@ class VideoPlayerVC: UIViewController {
                         if (response.status == 200)
                         {
                             // Removed from playlist
-                            self.showToast(message: "Removed from playlist")
+                            self.showToast(message: "내 수업 영상에서 제거 했습니다.")
                             self.playListButton.isSelected = false
                             self.playListButton.layer.borderColor = UIColor.lightGray.cgColor
                         }
@@ -488,7 +488,7 @@ class VideoPlayerVC: UIViewController {
                     if response != nil {
                         if (response.status == 200)
                         {   // Added to playlist
-                            self.showToast(message: "Added to playlist")
+                            self.showToast(message: "내 수업 영상에 추가했습니다!")
                             self.playListButton.isSelected = true
                             self.playListButton.layer.borderColor = UIColor.orange.cgColor
                         }
@@ -521,7 +521,7 @@ class VideoPlayerVC: UIViewController {
                     if response != nil {
                         if (response.status == 200)
                         {
-                            self.showToast(message: "Review submitted successfully")
+                            self.showToast(message: "리뷰를 정상적으로 보냈습니다.")
                             self.rateThisImageView.image = UIImage.init(named: "ic_rate_orange")
                             self.rateThisUIView.layer.borderColor = UIColor.orange.cgColor
                             self.rateThisButton.isSelected = true
@@ -542,14 +542,14 @@ class VideoPlayerVC: UIViewController {
     
     @objc func rotated() {
         if UIDevice.current.orientation.isLandscape {
-            print("Landscape")
+            print("가로 화면")
             //self.titleBarView.isHidden = true
             //self.view.backgroundColor = UIColor.black
             //video.frame = CGRect(x: 0, y: 0, width: self.view.frame.width , height: self.view.frame.height)
             //setNeedsStatusBarAppearanceUpdate()
             
         } else {
-            print("Portrait")
+            print("세로 화면")
             //self.titleBarView.isHidden = false
             //self.view.backgroundColor = UIColor.white
             //video.frame = CGRect(x: 0, y: 0, width: youtubePlayerBGView.frame.width, height: youtubePlayerBGView.frame.height)
@@ -564,7 +564,7 @@ class VideoPlayerVC: UIViewController {
         super.viewDidLoad()
         
         if Connectivity.isConnectedToInternet {
-               print("Yes! internet is available.")
+               print("인터넷가능.")
                // do some tasks..
             NotificationCenter.default.addObserver(self, selector: #selector(self.rotated), name: UIDevice.orientationDidChangeNotification, object: nil)
             
@@ -694,7 +694,7 @@ class VideoPlayerVC: UIViewController {
             
         // Uploaded Video
         case "3":
-            
+            //URL 놓는 곳
             let credentials = CredentialGenerator.getBaseCredentials()
             print("# BASE: \(credentials.baseUrl)")
             print("# FILE: \(credentials.fileUrl)")

@@ -14,6 +14,9 @@ import FBSDKLoginKit
 import UserNotifications
 import GoogleMobileAds
 import WLEmptyState
+import FirebaseCore
+import FirebaseMessaging
+import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
@@ -35,6 +38,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         
         // FB
         ApplicationDelegate.shared.application(application,didFinishLaunchingWithOptions: launchOptions)
+        
+        
+        
+        
         
         window = UIWindow(frame: UIScreen.main.bounds)
         

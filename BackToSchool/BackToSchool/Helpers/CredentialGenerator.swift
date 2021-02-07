@@ -30,6 +30,12 @@ class CredentialGenerator {
         return (id!)
     }
     
+    static func getAppleCredentials() -> (String) {
+        let credentialDic = readCredentialJson()
+        let id = credentialDic["AppleAppId"] as? String
+        return (id!)
+    }
+//    
     static func getBaseCredentials() -> (baseUrl: String,  thumbUrl: String, fileUrl: String) {
         let credentialDic = readCredentialJson()
         

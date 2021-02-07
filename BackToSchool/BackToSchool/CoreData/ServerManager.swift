@@ -16,8 +16,12 @@ class ServerManager {
         AppUtils.log(tag: "requestForGetData url ", printObject: url)
         AppUtils.log(tag: "requestForGetData param ", printObject: param)
     
+        
+        
+      
         if !url.isEmpty  {
-            Alamofire.request(url, method: .post, parameters: param).responseJSON { (response) in
+            Alamofire.request(url, method: .post, parameters: param)
+                .responseJSON { (response) in
                 var appResponse = ResponseModel.init()
                 switch response.result {
                 case .success :

@@ -29,7 +29,7 @@ class PasswordRecoveryVC: UIViewController, UITextFieldDelegate{
     }
     var email = ""
     var countdownTimer: Timer!
-    var totalTime = 60
+    var totalTime = 180
     var verificationTokenFromServer = ""
     
     override func viewDidLoad() {
@@ -91,7 +91,7 @@ class PasswordRecoveryVC: UIViewController, UITextFieldDelegate{
                     if response != nil {
                         if (response.status == 200)
                         {
-                            self.showToast(message: "4 digit code sent to your email")
+                            self.showToast(message: "회원님의 이메일로 인증번호 4자리를 보냈습니다!")
                             
                         }
                         else {
@@ -99,7 +99,7 @@ class PasswordRecoveryVC: UIViewController, UITextFieldDelegate{
                         }
                         
                     } else {
-                        self.showToast(message: "Opps! something went wrong")
+                        self.showToast(message: "잘 못 보냈습니다!")
                         
                     }
                     
@@ -124,7 +124,7 @@ class PasswordRecoveryVC: UIViewController, UITextFieldDelegate{
                                 let verificationTokenFromServer = userMap["verification_token"] as? String ?? ""
                                 
                                 
-                                let vc = self.storyboard?.instantiateViewController(withIdentifier: "CreatePasswordVC") as! CreatePasswordVC
+                                let vc = self.storyboard?.instantiateViewController(withIdentifier: "ChangePasswordVC") as! ChangePasswordVC
                                 vc.email = email
                                 vc.verificationTokenFromServer = verificationTokenFromServer
                                 self.navigationController?.pushViewController(vc, animated: true)

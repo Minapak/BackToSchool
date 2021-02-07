@@ -8,11 +8,17 @@
 import UIKit
 import DropDown
 import Firebase
+import SlideMenuControllerSwift
 
 class ViewController: UIViewController, UITextFieldDelegate{
+    //MARK: View 선언
+    //live 수업 View
     @IBOutlet weak var liveTvView: UIView!
+    //이번 주 수업(시험범위) View
     @IBOutlet weak var featuredView: UIView!
+    //가장 많이 본 수업 View
     @IBOutlet weak var mostPopularView: UIView!
+    //최신 수업 View
     @IBOutlet weak var mostRecentView: UIView!
     
     @IBOutlet weak var liveTvHeightConstant: NSLayoutConstraint!
@@ -25,6 +31,9 @@ class ViewController: UIViewController, UITextFieldDelegate{
     @IBOutlet weak var searchBarView: UIView!
     @IBOutlet weak var searchIconImageView: UIImageView!
     @IBOutlet weak var searchTextField: UITextField!
+    //MARK: Collection View 선언
+    //Collection View?
+    //정렬 된 데이터 항목 모음을 관리하고 사용자 지정 가능한 레이아웃을 사용하여 표시하는 개체
     @IBOutlet weak var categoryCollectionView: UICollectionView!
     @IBOutlet weak var liveTvCollectionView: UICollectionView!
     @IBOutlet weak var featuredCollectionView: UICollectionView!
@@ -32,19 +41,25 @@ class ViewController: UIViewController, UITextFieldDelegate{
     @IBOutlet weak var mostRecentCollectionView: UICollectionView!
     
     @IBOutlet weak var hetghtConstraintOfMostRecentCollectionView: NSLayoutConstraint!
+    
+    //MARK: 버튼 선언
     @IBOutlet weak var seeAllLiveTVButton: UIButton!
     @IBOutlet weak var seeAllFeaturedButton: UIButton!
     @IBOutlet weak var seeAllMostPopularButton: UIButton!
     @IBOutlet weak var seeAllMostRecentButton: UIButton!
+    //MARK: 타이틀 선언
     @IBOutlet weak var liveTvTitleLabel: UILabel!
     @IBOutlet weak var featuredTitleLabel: UILabel!
     @IBOutlet weak var mostPopularTitleLabel: UILabel!
     @IBOutlet weak var mostRecentTitleLabel: UILabel!
     
+    @IBOutlet weak var titleBar: UILabel!
+    
+    //MARK: 타이틀 선언우측 상단 더보기 버튼 클릭시
     @IBAction func moreMenuButtonAction(_ sender: Any) {
-
+        //인터넷 연결되면
         if Connectivity.isConnectedToInternet {
-               print("Yes! internet is available.")
+               print("인터넷가능")
                // do some tasks..
             createDropDownMoreMenuOption()
             dropDown.show()
@@ -56,6 +71,7 @@ class ViewController: UIViewController, UITextFieldDelegate{
     
     @IBOutlet weak var moreMenuButton: UIButton!
     
+    //MARK: 가장 많이 본 수업 클릭시
     @IBAction func seeAllMostRecentAction(_ sender: Any) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "VideoListVC") as! VideoListVC
         vc.categoryName = "most_recent"
@@ -64,6 +80,7 @@ class ViewController: UIViewController, UITextFieldDelegate{
         self.navigationController?.pushViewController(vc, animated: true)
 
     }
+    //MARK: 이번 주 수업 클릭시
     @IBAction func seeAllFeaturedAction(_ sender: Any) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "VideoListVC") as! VideoListVC
         vc.categoryName = "featured"
@@ -71,7 +88,7 @@ class ViewController: UIViewController, UITextFieldDelegate{
         self.navigationController?.pushViewController(vc, animated: true)
 
     }
-    
+    //MARK: 가장 많이 본 수업 클릭시
     @IBAction func seeAllMostPopularAction(_ sender: Any) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "VideoListVC") as! VideoListVC
         vc.categoryName = "most_popular"
@@ -98,8 +115,11 @@ class ViewController: UIViewController, UITextFieldDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//        titleBar.text="Back To School"
+//        self.view.addSubview(titleBar)
+        
         if Connectivity.isConnectedToInternet {
-               print("Yes! internet is available.")
+               print("인터넷 가능")
                // do some tasks..
             self.showSpinner(onView: self.view)
             self.searchTextField.delegate = self
@@ -195,7 +215,7 @@ class ViewController: UIViewController, UITextFieldDelegate{
     }
     
 
-    /// Login Status
+    // MARK: 로그인 상태
     func isUserLoggedIn() -> Bool {
         var user = UserModel.init()
         user = VideonManager.shared().getMyData()
@@ -206,9 +226,9 @@ class ViewController: UIViewController, UITextFieldDelegate{
     
     func createDropDownMoreMenuOption(){
         
-        // The view to which the drop down will appear on
+        // MARK: 드롭 다운 시 보이는 메뉴들
         dropDown.anchorView = moreMenuButton // UIView or UIBarButtonItem
-        let menuImageList = ["ic_user_grey", "ic_settings", "ic_history_grey", "ic_logout_grey"]
+        let menuImageList = ["ic_user_grey", "ic_settings", "ic_history_grey", "ic_paper_grey", "ic_logout_grey"]
         let appLanguageCode = AppUtils.getAppLanguage()
         
         
@@ -217,12 +237,14 @@ class ViewController: UIViewController, UITextFieldDelegate{
             dropDown.dataSource = ["ProfileKey".localizableString(loc: appLanguageCode),
                                    "SettingsKey".localizableString(loc: appLanguageCode),
                                    "PlayListKey".localizableString(loc: appLanguageCode),
+                                   "ClassPaperKey".localizableString(loc: appLanguageCode),
                                    "SignOutKey".localizableString(loc: appLanguageCode)]
         } else {
             // Show login page
             dropDown.dataSource = ["ProfileKey".localizableString(loc: appLanguageCode),
                                    "SettingsKey".localizableString(loc: appLanguageCode),
                                    "PlayListKey".localizableString(loc: appLanguageCode),
+                                   "ClassPaperKey".localizableString(loc: appLanguageCode),
                                    "SignInKey".localizableString(loc: appLanguageCode)]
         }
         
@@ -238,10 +260,9 @@ class ViewController: UIViewController, UITextFieldDelegate{
             
             print("Selected item: \(item) at index: \(index)")
             if(item == "ProfileKey".localizableString(loc: appLanguageCode)){
-                
                 if self.isUserLoggedIn() {
-
-                        let vc = self.storyboard?.instantiateViewController(withIdentifier: "ProfileVC2") as! ProfileVC2
+                
+                        let vc = self.storyboard?.instantiateViewController(withIdentifier: "EditProfileVC") as! EditProfileVC
                         self.navigationController?.pushViewController(vc, animated: true)
                     
                 } else {
@@ -255,7 +276,7 @@ class ViewController: UIViewController, UITextFieldDelegate{
 
                 
             } else if(item == "SettingsKey".localizableString(loc: appLanguageCode)){
-                let vc = self.storyboard?.instantiateViewController(withIdentifier: "SettingsVC") as! SettingsVC
+                let vc = self.storyboard?.instantiateViewController(withIdentifier: "SettingsVC1") as! SettingsVC1
                 
                 self.navigationController?.pushViewController(vc, animated: true)
                 
@@ -274,12 +295,39 @@ class ViewController: UIViewController, UITextFieldDelegate{
                 }
                 
                 
-            } else if(item == "SignOutKey".localizableString(loc: appLanguageCode)){
+            } else if(item == "ClassPaperKey".localizableString(loc: appLanguageCode)){
+                
+                
+                if self.isUserLoggedIn() {
+                        //UserDefaults.standard.set("0", forKey: UD_userId)
+                        let vc = self.storyboard?.instantiateViewController(withIdentifier: "HomeVC") as! HomeVC
+                        self.navigationController?.pushViewController(vc, animated: true)
+                    let sidemenuVC = self.storyboard?.instantiateViewController(withIdentifier: "SideMenuVC") as! SideMenuVC
+                    let appNavigation: UINavigationController = UINavigationController(rootViewController: vc)
+                    appNavigation.setNavigationBarHidden(true, animated: true)
+                    let slideMenuController = SlideMenuController(mainViewController: appNavigation, leftMenuViewController: sidemenuVC)
+                    slideMenuController.changeLeftViewWidth(UIScreen.main.bounds.width * 0.8)
+                    slideMenuController.removeLeftGestures()
+                    UIApplication.shared.windows[0].rootViewController = slideMenuController
+                    
+                } else {
+                    // Class Paper 로그인 페이지
+                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "SignInVC") as! SignInVC
+                    self.navigationController?.pushViewController(vc, animated: true)
+                    
+                }
+                
+                
+            }
+            
+            
+            
+            else if(item == "SignOutKey".localizableString(loc: appLanguageCode)){
                 
                 // create the alert
-                let alert = UIAlertController(title: "SignOut?", message: "Are you sure, you want to sign out from this app？", preferredStyle: UIAlertController.Style.alert)
+                let alert = UIAlertController(title: "로그아웃", message: "정말 로그아웃을 하시겠습니까？", preferredStyle: UIAlertController.Style.alert)
                 // add the actions (buttons)
-                alert.addAction(UIAlertAction(title: "Yes", style: UIAlertAction.Style.default, handler: { action in
+                alert.addAction(UIAlertAction(title: "네", style: UIAlertAction.Style.default, handler: { action in
                     // Logout
                     // Manual sign out
                     VideonManager.shared().removeMyData()
@@ -287,15 +335,20 @@ class ViewController: UIViewController, UITextFieldDelegate{
                     // Call for sign out
                     do {
                         try Auth.auth().signOut()
-                        self.showToast(message: "Sign Out Successful")
+                        //수업자료 로그아웃
+                        UserDefaults.standard.set("", forKey: UD_userId)
+                        self.showToast(message: "로그아웃 완료")
                         //signInSignOutButton.setTitle("SignInKey".localizableString(loc: appLanguageCode), for: .normal)
+                        
+                       
+                        
                     } catch {
                         print("Sign out error")
-                        self.showToast(message: "Error Sign out")
+                        self.showToast(message: "Error 로그아웃")
                     }
                     
                 }))
-                alert.addAction(UIAlertAction(title: "Cancle", style: UIAlertAction.Style.destructive , handler: nil))
+                alert.addAction(UIAlertAction(title: "취소", style: UIAlertAction.Style.destructive , handler: nil))
                 // show the alert
                 self.present(alert, animated: true, completion: nil)
                 
@@ -425,7 +478,7 @@ class ViewController: UIViewController, UITextFieldDelegate{
     
     // 5
     private func getRecentDataFromServer() {
-        showLoadingViewOnTop(message: "Please wait...")
+        showLoadingViewOnTop(message: "잠시만 기다려주세요...")
         DispatchQueue.global().async {
             VideonManager.shared().getRecentListData(pageValue: self.pagination) { (dataList, message) in
                 DispatchQueue.main.async {
@@ -484,7 +537,7 @@ class ViewController: UIViewController, UITextFieldDelegate{
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "VideoListVC") as! VideoListVC
         vc.categoryName = "search_video"
         vc.searchText = self.searchTextField.text ?? ""
-        vc.titleLabelText = "搜索"
+        vc.titleLabelText = "수업 영상 찾기"
         
         self.navigationController?.pushViewController(vc, animated: true)
     }
@@ -619,7 +672,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
 
         
         if Connectivity.isConnectedToInternet {
-               print("Yes! internet is available.")
+               print("인터넷가능")
                // do some tasks..
             if collectionView == categoryCollectionView {
                 //goToNextViewController()

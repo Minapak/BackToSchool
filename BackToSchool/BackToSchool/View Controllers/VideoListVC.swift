@@ -40,19 +40,21 @@ class VideoListVC: UIViewController, UITextFieldDelegate, WLEmptyStateDataSource
         
         // Do any additional setup after loading the view.
         self.showSpinner(onView: self.view)
-        
+        //필수 시청 영상
         if(categoryName == "featured")
         {
             getFeaturedDataFromServer()
-            
+            //가장 많이 본 수업 영상
         } else if(categoryName == "most_popular")
         {
             getPopularDataFromServer()
             
+            //최신 수업 영상
         } else if(categoryName == "most_recent")
         {
             getRecentDataFromServer()
         }
+        //수업 영상 찾기
         else if(categoryName == "search_video")
         {
             searchInputField.text = searchText

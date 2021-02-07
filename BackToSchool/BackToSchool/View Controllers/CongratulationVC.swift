@@ -8,7 +8,7 @@ import UIKit
 
 class CongratulationVC: UIViewController {
     var countdownTimer: Timer!
-    var totalTime = 2
+    var totalTime = 3
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +33,8 @@ class CongratulationVC: UIViewController {
     
     func endTimer() {
         countdownTimer.invalidate()
-        self.navigationController?.popToRootViewController(animated: true)
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "SignInVC") as! SignInVC
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
 }

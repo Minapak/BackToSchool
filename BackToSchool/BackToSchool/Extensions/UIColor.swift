@@ -9,17 +9,17 @@ import UIKit
 
 extension UIColor {
 
-    convenience init(hex: String) {
-        self.init(hex: hex, alpha:1)
-    }
-    
-    func themeColor() -> UIColor{
-        return UIColor.init(hex: "#232221")
-    }
-    
-    func skyBlueColor() -> UIColor{
-        return UIColor.init(hex: "7ccae9")
-    }
+//    convenience init(hex: String) {
+//        self.init(hex: hex, alpha:1)
+//    }
+//
+//    func themeColor() -> UIColor{
+//        return UIColor.init(hex: "#232221")
+//    }
+//
+//    func skyBlueColor() -> UIColor{
+//        return UIColor.init(hex: "7ccae9")
+//    }
     
     convenience init(hex: String, alpha: CGFloat) {
         var hexWithoutSymbol = hex
